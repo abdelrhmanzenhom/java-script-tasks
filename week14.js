@@ -27,7 +27,7 @@ if(div.innerHTML==0){clearInterval(int);}
 },1000) */
 
 
-let userTask=document.querySelector(".input");
+/* let userTask=document.querySelector(".input");
 let addTaskButt=document.querySelector(".add");
 let tasks=document.querySelector(".tasks");
 let tasksArr=[]
@@ -113,7 +113,47 @@ function all(id,val){
   window.localStorage.setItem("tasks",JSON.stringify(tasksArr));
  }
 
+} */
+/*  let selector=document.querySelector("#selection");
+ let inp1=document.querySelector(".first");
+ let inp2=document.querySelector(".second");
+ let inp3=document.querySelector(".third");
+ if(window.sessionStorage.getItem("val")){
+  selector.value=window.sessionStorage.getItem("val")
+ }
+ if(window.sessionStorage.getItem("in1")){
+  inp1.value=sessionStorage.getItem("in1");
+ }
+inp1.addEventListener("blur",function(){
+  window.sessionStorage.setItem("in1",inp1.value);
+})
+
+ selector.addEventListener("change",function(){
+window.sessionStorage.setItem("val",selector.value);
+ }) */
+
+let colors=document.querySelector("#colors");
+let fonts=document.querySelector("#fonts");
+let sizes=document.querySelector("#sizes");
+if(window.localStorage.getItem("color")){
+  colors.value=window.localStorage.getItem("color");
+  document.body.style.backgroundColor=window.localStorage.getItem("color");
 }
+
+
+colors.addEventListener("change",function(){
+document.body.style.backgroundColor=colors.value;
+window.localStorage.setItem("color",colors.value);
+})
+fonts.addEventListener("change",function(){
+document.body.style.fontFamily=fonts.value;
+})
+sizes.addEventListener("change",function(){
+document.body.style.fontSize=sizes.value;
+})
+
+
+ 
 
  
 
