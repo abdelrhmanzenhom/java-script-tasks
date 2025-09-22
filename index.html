@@ -4,6 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+   /*    .pop-up{
+        background-color: #EEE;
+        width: 500px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        display: none;
+      }
+      .close-butt{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: red;
+        color: white;
+        border: none;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+      } */
+       .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        gap: 20px;
+        
+       }
+      .form{
+        background-color: #EEE;
+        width: 90%;
+        padding: 20px;
+        
+      }
+      .input{
+        width: 75%;
+        padding: 20px;
+        border: 0;
+        border-radius: 10px;
+      }
+      .add{
+        padding: 20px;
+        border: 0;
+         border-radius: 10px;
+        background-color: orangered;
+        color: white;
+      }
+      .tasks{
+        background-color:#EEE;
+        width: 90%;
+        padding: 20px;
+      }
+    </style>
    <!--  <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -48,8 +106,8 @@
     </style>
 </head>
 <body>
-    <!-- <div id="elzero" class="element" name="js">JavaScript</div> -->
- <!--     <div>
+     <div id="elzero" class="element" name="js">JavaScript</div>
+    <div>
   <img decoding="async" src="#" alt="" />
 </div>
 <div>
@@ -116,11 +174,20 @@
         <div></div>
       </div>
     </div> -->
-    <div class="pop-up">
+   <!--  <div class="pop-up">
       <button class="close-butt">x</button>
         <h2>Welcome</h2>
         <p>Welcom To Elzero Web School</p>
-    </div>
+    </div> -->
+    <!-- <div id="ten">10</div> -->
+     <div class="container">
+      <div class="form">
+        <input type="text" class="input">
+        <input type="submit" class="add" value="Add Task">
+
+      </div>
+      <div class="tasks"></div>
+     </div>
     <script src="week14.js"></script>
 </body>
 </html>
