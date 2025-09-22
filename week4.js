@@ -38,11 +38,30 @@ let letterO = "O";
 console.log(word.includes(letterZ)); // True
 console.log(word.startsWith(letterE.toLocaleUpperCase())); // True
 console.log(word.endsWith(letterO.toLocaleLowerCase())); // True */
-console.log(100 == "100"); // true
+/* console.log(100 == "100"); // true
 console.log(100 < 1000); // true
 console.log(110 > 100 && 10 < 20); // true
 console.log(-10 == "-10"); // true
 console.log(typeof -50 === typeof +"-40"); // true
 console.log(typeof 10 == typeof -"-40"); // true
 console.log(typeof "10" !== typeof 10); // true
-console.log(! 20 == false); // true
+console.log(! 20 == false); // true */
+
+/* let my= ["Ahmed","Mazero", "Elham", "Osama", "Gamal"];
+let zero=0;
+let counter =3; 
+
+console.log(my.slice(0,4).reverse());
+console.log(my.slice(1,3).reverse())
+console.log(my[--counter].slice(--Zero,counter)+my[++Zero].slice(counter))
+my[1]="Elzero"
+console.log(my[1]) */
+
+let arrOne = ["C", "D", "X"];
+let arrTwo = ["A", "B", "Z"];
+let finalArr = [];
+
+// Write One Single Line Of Code
+finalArr = arrTwo.reverse().concat(arrOne.reverse());
+console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+
